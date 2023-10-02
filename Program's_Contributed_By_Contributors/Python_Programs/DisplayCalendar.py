@@ -1,11 +1,12 @@
 # Program to display calendar of the given month and year
+#ACCORDING TO GREGORIAN CALENDAR
 
-# importing calendar module
 import calendar
+year =int(input("Which Year Calendar You Want To See? : "))
 
-# To take month and year input from the user
-yy = int(input("Enter year: "))
-mm = int(input("Enter month: "))
+if year>0000 and year<10000:
+    print(calendar.calendar(year))
+else:
+    print("Year Entered Is Invalid")
 
-# display the calendar
-print(calendar.month(yy, mm))
+
